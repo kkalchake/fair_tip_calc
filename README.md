@@ -1,9 +1,9 @@
-# fair_tip_calc
-Alternative for unfair splitting math is ready to help you here https://kkalchake.github.io/fair_tip_calc/ - With Nice Front End
+# 🍽️ Bill Splitter (2 options : HTML or Python)
 
-# 🍽️ Bill Splitter
+1. HTML is deployed via GitHub pages and is ready to help you here https://kkalchake.github.io/fair_tip_calc/
+Same logic is written in Python below:
 
-A production-quality command-line application for splitting restaurant bills fairly among multiple people. Built with Python 3.10+ using `Decimal` for precise money calculations.
+2. A production-quality command-line application for splitting restaurant bills fairly among multiple people. Built with Python 3.10+ using `Decimal` for precise money calculations.
 
 ## Features
 
@@ -23,12 +23,7 @@ A production-quality command-line application for splitting restaurant bills fai
 
 1. **Download the file:**
 ```bash
-   curl -O https://raw.githubusercontent.com/yourusername/bill-splitter/main/bill_splitter.py
-```
-
-2. **Make it executable (optional):**
-```bash
-   chmod +x bill_splitter.py
+   curl -O https://github.com/kkalchake/fair_tip_calc/blob/main/bill_splitter.py
 ```
 
 ## Usage
@@ -169,15 +164,6 @@ Bob:
 ============================================================
 Thank you! 😊
 ```
-
-## Business Logic
-
-### Money Calculations
-- All calculations use `Decimal` with 28-digit precision
-- Display values rounded to 2 decimal places
-- Tax and tip are split evenly among all people
-- Shared items are divided exactly by the number of sharers
-
 ### Formula
 ```
 Tax + Tip per person = (tax + tip) / number_of_people
@@ -219,11 +205,6 @@ bill_splitter.py
     └── run_demo_calculations() - Testing mode
 ```
 
-### Design Principles
-- **No nested functions** - All functions are top-level
-- **Type hints** - Full type annotation for clarity
-- **Single responsibility** - Each function has one clear purpose
-- **No external dependencies** - Uses only Python standard library
 
 ## Testing
 
